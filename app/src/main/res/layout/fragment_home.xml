@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolbar1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/nave_menu"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:onClick="naveOpen"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/menu_icon" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logo" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/image_1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-12dp"
+                        android:elevation="1dp"
+                        android:src="@drawable/image_2" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_30sdp"
+                android:background="@drawable/grey_border">
+
+
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/abraham" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:src="@drawable/editing" />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_image"
+                    android:fontFamily="@font/playfair_display_sc_bold"
+                    android:fontFeatureSettings="smcp"
+                    android:gravity="center"
+                    android:text="Abraham Thomas"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/line1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:fontFamily="@font/playfair_display_sc_regular"
+                        android:fontFeatureSettings="smcp"
+                        android:gravity="center"
+                        android:text="Peral Land East"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/rectangle" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:fontFamily="@font/playfair_display_sc_regular"
+                        android:gravity="center"
+                        android:fontFeatureSettings="smcp"
+                        android:text="#56566"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/rectangle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:fontFamily="@font/playfair_display_sc_regular"
+                        android:gravity="center"
+                        android:text="Male"
+                        android:fontFeatureSettings="smcp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/line1"
+                    android:id="@+id/line2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/social_media_buttons"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:background="@drawable/grey_border_two"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:fontFamily="@font/playfair_display_sc_regular"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/call_icon"
+                        android:text="Address\n601 Lakeland Terrace"
+                        android:textAlignment="textStart"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFeatureSettings="smcp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:background="#E4E8F4"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:fontFamily="@font/playfair_display_sc_regular"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/call_icon"
+                        android:text="Phone Number\n91 6456584156"
+                        android:textAlignment="textStart"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFeatureSettings="smcp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/oneside_corner"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_image"
+                        android:fontFamily="@font/playfair_display_sc_bold"
+                        android:fontFeatureSettings="smcp"
+                        android:gravity="start"
+                        android:text="My Households"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <View
+                        android:layout_width="@dimen/_15sdp"
+                        android:background="@color/red"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/my_house_holds"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_below="@+id/line4"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_image"
+                            android:fontFamily="@font/playfair_display_sc_bold"
+                            android:fontFeatureSettings="smcp"
+                            android:gravity="start"
+                            android:text="Birthdays"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_image"
+                            android:fontFamily="@font/playfair_display_sc_bold"
+                            android:fontFeatureSettings="smcp"
+                            android:gravity="start"
+                            android:text="Wedding Anniversary"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="@dimen/_15sdp"
+                        android:background="@color/red"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/birthdays_list"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

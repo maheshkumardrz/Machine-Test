@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/vie"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vie"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bottomHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/im_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_unselected" />
+
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomFamily"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/im_Family"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tag="social"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/family_unselected" />
+
+            <TextView
+                android:id="@+id/txt_Family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_Family"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="@string/family"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/im_Activity"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/activity_unselected" />
+
+            <TextView
+                android:id="@+id/txt_Activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_Activity"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="@string/activity"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomContribution"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:paddingTop="4dp">
+
+
+            <ImageView
+                android:id="@+id/im_Contribution"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/contribution_unselected" />
+
+            <TextView
+                android:id="@+id/txt_Contribution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_Contribution"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="@string/contribution"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

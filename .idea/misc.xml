@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/grey_border.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/drawable/grey_border_two.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/drawable/oneside_corner.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.287962962962963" />
+        <entry key="app/src/main/res/layout/birthdays_view_item.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/bottom_navigation_bar.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.2797113565699971" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2881475377092275" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/house_holders_view_item.xml" value="0.2546875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
